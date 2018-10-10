@@ -17,6 +17,12 @@
     RCTResponseSenderBlock alipayCallBack;
 }
 RCT_EXPORT_MODULE(PutiPay);
+
++ (BOOL)requiresMainQueueSetup
+{
+	return NO;
+}
+
 - (instancetype)init
 {
     self = [super init];
