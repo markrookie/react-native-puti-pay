@@ -9,9 +9,6 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
-
-
     }
     buildTypes {
         release {
@@ -21,9 +18,15 @@ android {
     }
 }
 
+repositories {
+
+    mavenCentral()
+    flatDir { dirs 'libs' }
+
+}
+
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    // From node_modules
-    compile files('libs/alipaySdk-20170922.jar')
+    compile (name: 'alipaySdk-15.6.2-20190416165036', ext: 'aar')
     compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
 }
