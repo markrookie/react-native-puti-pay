@@ -1,6 +1,6 @@
 {
   "name": "markrookie-react-native-puti-pay",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "微信和支付宝支付的react-native模块",
   "main": "index.js",
   "scripts": {
